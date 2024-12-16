@@ -29,4 +29,20 @@ public class HomePage extends ProjectSpecificationMethods {
 		return new SearchHotel(driver);
 	}
 
+	public HomePage clickLogout() throws InterruptedException {
+		driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
+		Thread.sleep(5000);
+		return new HomePage(driver);
+
+	}
+	public FinalLogout finalLogout() throws InterruptedException {
+		driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
+		Thread.sleep(5000);
+		return new FinalLogout(driver);
+	}
+	// Click the change password tab
+		public ChangePassWord ClickChangePassWordLink() {
+			driver.findElement(By.linkText("Change Password")).click();
+			return new ChangePassWord(driver);
+		}
 }

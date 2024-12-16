@@ -24,15 +24,6 @@ public class BookingConfirmation extends ProjectSpecificationMethods {
 		return this;
 	}
 
-	/*
-	 * public BookingConfirmation orderId() { WebElement e =
-	 * driver.findElement(By.xpath("//input[@id='order_no']")); orderId =
-	 * e.getAttribute("value"); System.out.println("Order ID :" + orderId); return
-	 * this;
-	 * 
-	 * }
-	 */
-
 	public BookedItinerary clickMyItinerary() {
 		driver.findElement(By.xpath("//input[@id='my_itinerary']")).click();
 		return new BookedItinerary(driver);

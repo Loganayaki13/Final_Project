@@ -1,5 +1,8 @@
 package test;
 
+import java.io.IOException;
+
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -9,52 +12,30 @@ import pages.HomePage;
 public class TC_009_FinalLogout extends ProjectSpecificationMethods {
 	
 	
-	//sheetName
-		//@BeforeTest
-	/*
-	 * public void data() { sheetName = "EndLogoutTestData"; }
-	 */
-		 
-		@Test//(dataProvider = "excelRead")
-		public void endLogoutTest() throws InterruptedException {
+	@BeforeTest
+	public void data() throws IOException {
+
+		testName = "FinalLogout Test";
+		testDescription = "Testing the FinalLogout functionality";
+		testAuthor = "Loganayaki";
+
+	}
+
+	@BeforeClass
+	public void details() {
+
+		testDetails();
+		sheetName = "FinalLogoutTestData"; 
+		}		 
+		@Test(dataProvider = "excelRead")
+		public void endLogoutTest(String userName, String password) throws InterruptedException {
 			HomePage obj = new HomePage(driver);
 			obj.clickLogin()
-			.loginUsername()
-			.loginPassword()
-			.clickLogin()
-			.clickSearch()
-			.location()
-			.hotels()
-			.roomType()
-			.noOfRooms()
-			.checkInDate()
-			.checkInOut()
-			.adultsPerRoom()
-			.childernPerRoom()
-			.searchClick()
-			.selectTheHotel()
-			.continueClick()
-			.firstName()
-			.lastName()
-			.billingAddress()
-			.creditCardNo()
-			.creditCardType()
-			.expiryMonth()
-			.expiryYear()
-			.cvvNum()
-			.clickBookNow()
-			.bookingConfirm()
-			.clickMyItinerary()
-			.selectOrderId()
-			.cancelButtonClick()
-			.clickOkConfirm()
-			.confirmCancel()
-			.ChangePassWordLink()
-			.currentPassword()
-			.newPassword()
-			.confirmPassword()
-			.clickSubmit()
-			.finalLogout();
+			.loginUsername(userName)
+			.loginPassword(password)
+			.clickLoginButton()
+			.finalLogout()
+			.logoutChecking();
 		}
 
 }

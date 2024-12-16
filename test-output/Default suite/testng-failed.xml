@@ -6,8 +6,12 @@
       <class name="test.TC_009_FinalLogout">
         <methods>
           <include name="LaunchAndLoadURL"/>
-          <include name="endLogoutTest"/>
-          <include name="browserClose"/>
+          <include name="closeBrowser"/>
+          <include name="details"/>
+          <include name="endLogoutTest" invocation-numbers="0"/>
+          <include name="data"/>
+          <include name="reportInitilization"/>
+          <include name="reportClose"/>
         </methods>
       </class> <!-- test.TC_009_FinalLogout -->
     </classes>

@@ -12,60 +12,68 @@ public class SearchHotel extends ProjectSpecificationMethods {
 		this.driver = driver;
 	}
 
-	public SearchHotel location() {
+	// Select the Location
+	public SearchHotel location(String Location) {
 		ele = driver.findElement(By.xpath("(//select[@class='search_combobox'])[1]"));
 		Select s = new Select(ele);
-		s.selectByValue("London");
+		s.selectByValue(Location);
 		return this;
 	}
 
-	public SearchHotel hotels() {
+	// Select the hotels
+	public SearchHotel hotels(String hotelName) {
 
 		ele = driver.findElement(By.xpath("(//select[@class='search_combobox'])[2]"));
 		Select s = new Select(ele);
-		s.selectByValue("Hotel Sunshine");
+		s.selectByValue(hotelName);
 		return this;
 	}
 
-	public SearchHotel roomType() {
+	// Select the roomtype
+	public SearchHotel roomType(String roomtype) {
 
 		ele = driver.findElement(By.xpath("(//select[@class='search_combobox'])[3]"));
 		Select s = new Select(ele);
-		s.selectByValue("Standard");
+		s.selectByValue(roomtype);
 		return this;
 	}
 
-	public SearchHotel noOfRooms() {
+	// Select the No of Rooms
+	public SearchHotel noOfRooms(String roomCount) {
 
 		ele = driver.findElement(By.xpath("(//select[@class='search_combobox'])[4]"));
 		Select s = new Select(ele);
-		s.selectByVisibleText("3 - Three");
+		s.selectByVisibleText(roomCount);
 		return this;
 	}
 
-	public SearchHotel checkInDate() {
+	// Select the check-in date
+	public SearchHotel checkInDate(String dateIn) {
 
-		driver.findElement(By.id("datepick_in")).sendKeys("11/12/2024");
+		driver.findElement(By.id("datepick_in")).sendKeys(dateIn);
 		return this;
 	}
 
-	public SearchHotel checkInOut() {
-		driver.findElement(By.id("datepick_out")).sendKeys("12/12/2024");
+	// Select the check-out date
+	public SearchHotel checkInOut(String dateOut) {
+		driver.findElement(By.id("datepick_out")).sendKeys(dateOut);
 		return this;
 	}
 
-	public SearchHotel adultsPerRoom() {
+	// Select the adults per room
+	public SearchHotel adultsPerRoom(String adultCount) {
 		ele = driver.findElement(By.xpath("(//select[@class='search_combobox'])[5]"));
 		Select s = new Select(ele);
-		s.selectByVisibleText("2 - Two");
+		s.selectByVisibleText(adultCount);
 		return this;
 
 	}
 
-	public SearchHotel childernPerRoom() {
+	// Select the children per room
+	public SearchHotel childernPerRoom(String childrenCount) {
 		ele = driver.findElement(By.xpath("(//select[@class='search_combobox'])[6]"));
 		Select s = new Select(ele);
-		s.selectByVisibleText("1 - One");
+		s.selectByValue(childrenCount);
 		return this;
 
 	}

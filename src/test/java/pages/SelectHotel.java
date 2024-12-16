@@ -8,20 +8,19 @@ import base.ProjectSpecificationMethods;
 public class SelectHotel extends ProjectSpecificationMethods {
 
 	public SelectHotel(WebDriver driver) {
-		
-		this.driver=driver;
-		
+
+		this.driver = driver;
+
 	}
-	public SelectHotel selectTheHotel()
-	{
+
+	public SelectHotel selectTheHotel() {
 		driver.findElement(By.id("radiobutton_0")).click();
 		return this;
 	}
-	public BookAHotel continueClick()
-	{
+
+	public BookAHotel continueClick() {
 		driver.findElement(By.id("continue")).click();
 		return new BookAHotel(driver);
 	}
-	
 
 }
