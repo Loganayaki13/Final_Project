@@ -1,10 +1,7 @@
 package pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -42,7 +39,7 @@ public class BookAHotel extends ProjectSpecificationMethods {
 		return this;
 	}
 
-	//// Enter the creditCardType
+	// Enter the creditCardType
 	public BookAHotel creditCardType(String cardType) {
 
 		ele = driver.findElement(By.xpath("//select[@id='cc_type']"));
