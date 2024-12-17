@@ -1,0 +1,3665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="42" passed="32" failed="10" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-17T12:42:23 IST" name="Suite" finished-at="2024-12-17T12:55:51 IST" duration-ms="808365">
+    <groups>
+    </groups>
+    <test started-at="2024-12-17T12:42:23 IST" name="Chrome Test" finished-at="2024-12-17T12:48:59 IST" duration-ms="396268">
+      <class name="test.TC_008_ChangePassword">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:03 IST" name="details" finished-at="2024-12-17T12:48:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:03 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:48:07 IST" duration-ms="3934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="changePasswordTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:07 IST" name="changePasswordTest" data-provider="excelRead" finished-at="2024-12-17T12:48:15 IST" duration-ms="8369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:15 IST" name="closeBrowser" finished-at="2024-12-17T12:48:15 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:15 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:48:19 IST" duration-ms="3912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="changePasswordTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:19 IST" name="changePasswordTest" data-provider="excelRead" finished-at="2024-12-17T12:48:42 IST" duration-ms="23277" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[L@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Your Password is successfully updated!!!')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ed97d6b3f7a16c6e53b2e5caf31722b, findElement {value=//span[contains(text(),'Your Password is successfully updated!!!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60562/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ed97d6b3f7a16c6e53b2e5caf31722b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Your Password is successfully updated!!!')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ed97d6b3f7a16c6e53b2e5caf31722b, findElement {value=//span[contains(text(),'Your Password is successfully updated!!!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60562/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ed97d6b3f7a16c6e53b2e5caf31722b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.ChangePassWord.clickSubmit(ChangePassWord.java:39)
+at test.TC_008_ChangePassword.changePasswordTest(TC_008_ChangePassword.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_008_ChangePassword@45c7e403]" started-at="2024-12-17T12:48:42 IST" name="closeBrowser" finished-at="2024-12-17T12:48:43 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_008_ChangePassword -->
+      <class name="test.TC_005_BookAHotelTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:45:07 IST" name="details" finished-at="2024-12-17T12:45:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:45:07 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:45:11 IST" duration-ms="3964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:45:11 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:45:32 IST" duration-ms="20472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15/12/2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2026]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:45:32 IST" name="closeBrowser" finished-at="2024-12-17T12:45:32 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:45:32 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:45:36 IST" duration-ms="4264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:45:36 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:46:07 IST" duration-ms="30398" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Melbourne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Sunshine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Logu]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Melbourne]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[987654321098765]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[VISA]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[February]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c8792b78410436bcdb618da4397d593, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60400/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c8792b78410436bcdb618da4397d593]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c8792b78410436bcdb618da4397d593, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60400/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c8792b78410436bcdb618da4397d593
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.BookAHotel.clickBookNow(BookAHotel.java:76)
+at test.TC_005_BookAHotelTest.bookAHotelTest(TC_005_BookAHotelTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:46:07 IST" name="closeBrowser" finished-at="2024-12-17T12:46:07 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:46:07 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:46:11 IST" duration-ms="4184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:46:11 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:46:31 IST" duration-ms="20230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15/12/2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2026]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:46:31 IST" name="closeBrowser" finished-at="2024-12-17T12:46:31 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:46:31 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:46:35 IST" duration-ms="3711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:46:35 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:47:04 IST" duration-ms="28911" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Melbourne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Sunshine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Logu]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Melbourne]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[23456]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[VISA]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[February]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [becaa23b989b052f522b8ac33f9beba0, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60456/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: becaa23b989b052f522b8ac33f9beba0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [becaa23b989b052f522b8ac33f9beba0, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60456/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: becaa23b989b052f522b8ac33f9beba0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.BookAHotel.clickBookNow(BookAHotel.java:76)
+at test.TC_005_BookAHotelTest.bookAHotelTest(TC_005_BookAHotelTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@752325ad]" started-at="2024-12-17T12:47:04 IST" name="closeBrowser" finished-at="2024-12-17T12:47:04 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_005_BookAHotelTest -->
+      <class name="test.TC_007_BookedItineraryTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_007_BookedItineraryTest@b3ca52e]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_007_BookedItineraryTest@b3ca52e]" started-at="2024-12-17T12:47:30 IST" name="details" finished-at="2024-12-17T12:47:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_007_BookedItineraryTest@b3ca52e]" started-at="2024-12-17T12:47:31 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:47:35 IST" duration-ms="4127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookedItineraryTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_007_BookedItineraryTest@b3ca52e]" started-at="2024-12-17T12:47:35 IST" name="bookedItineraryTest" data-provider="excelRead" finished-at="2024-12-17T12:48:02 IST" duration-ms="27726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[16/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookedItineraryTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_007_BookedItineraryTest@b3ca52e]" started-at="2024-12-17T12:48:02 IST" name="closeBrowser" finished-at="2024-12-17T12:48:03 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_007_BookedItineraryTest -->
+      <class name="test.TC_002_LoginTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:37 IST" name="details" finished-at="2024-12-17T12:42:37 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:38 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:42:42 IST" duration-ms="4653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:42 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:42:54 IST" duration-ms="11264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:54 IST" name="closeBrowser" finished-at="2024-12-17T12:42:54 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:54 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:42:57 IST" duration-ms="3317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:42:57 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:43:08 IST" duration-ms="10961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:08 IST" name="closeBrowser" finished-at="2024-12-17T12:43:08 IST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:08 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:43:11 IST" duration-ms="3273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:11 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:43:32 IST" duration-ms="20528" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayak]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Happ2024]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef728fd0823fa6be828133e714c2e452, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60169/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef728fd0823fa6be828133e714c2e452]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef728fd0823fa6be828133e714c2e452, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60169/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef728fd0823fa6be828133e714c2e452
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.LoginPage.clickLoginButton(LoginPage.java:31)
+at test.TC_002_LoginTest.loginTest(TC_002_LoginTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:32 IST" name="closeBrowser" finished-at="2024-12-17T12:43:32 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:32 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:43:36 IST" duration-ms="3303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:36 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:43:56 IST" duration-ms="20484" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganyaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Happ202]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ede181ccc37139d8496a3652726a03f0, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60192/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ede181ccc37139d8496a3652726a03f0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ede181ccc37139d8496a3652726a03f0, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60192/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ede181ccc37139d8496a3652726a03f0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.LoginPage.clickLoginButton(LoginPage.java:31)
+at test.TC_002_LoginTest.loginTest(TC_002_LoginTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@24aed80c]" started-at="2024-12-17T12:43:56 IST" name="closeBrowser" finished-at="2024-12-17T12:43:56 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_002_LoginTest -->
+      <class name="test.TC_006_BookConfirmationTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_006_BookConfirmationTest@279fedbd]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_006_BookConfirmationTest@279fedbd]" started-at="2024-12-17T12:47:04 IST" name="details" finished-at="2024-12-17T12:47:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_006_BookConfirmationTest@279fedbd]" started-at="2024-12-17T12:47:04 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:47:08 IST" duration-ms="3914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookingConfirmationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_006_BookConfirmationTest@279fedbd]" started-at="2024-12-17T12:47:08 IST" name="bookingConfirmationTest" data-provider="excelRead" finished-at="2024-12-17T12:47:30 IST" duration-ms="21985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[16/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingConfirmationTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_006_BookConfirmationTest@279fedbd]" started-at="2024-12-17T12:47:30 IST" name="closeBrowser" finished-at="2024-12-17T12:47:30 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_006_BookConfirmationTest -->
+      <class name="test.TC_003_SearchHotelTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:43:56 IST" name="details" finished-at="2024-12-17T12:43:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:43:56 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:44:00 IST" duration-ms="3333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:00 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:44:07 IST" duration-ms="7129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:07 IST" name="closeBrowser" finished-at="2024-12-17T12:44:07 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:07 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:44:11 IST" duration-ms="3775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:11 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:44:18 IST" duration-ms="7366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Melbourne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Sunshine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:18 IST" name="closeBrowser" finished-at="2024-12-17T12:44:18 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:18 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:44:22 IST" duration-ms="3832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:22 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:44:31 IST" duration-ms="8449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Hervey]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Double]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:31 IST" name="closeBrowser" finished-at="2024-12-17T12:44:31 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:31 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:44:35 IST" duration-ms="3806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:35 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:44:42 IST" duration-ms="7871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Cornice]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Double]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:42 IST" name="closeBrowser" finished-at="2024-12-17T12:44:43 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:43 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:44:47 IST" duration-ms="3975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:47 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:44:55 IST" duration-ms="8001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Brisbane]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Hervey]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@3a52dba3]" started-at="2024-12-17T12:44:55 IST" name="closeBrowser" finished-at="2024-12-17T12:44:55 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_003_SearchHotelTest -->
+      <class name="test.TC_004_SelectHotelTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_004_SelectHotelTest@2a5c8d3f]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_004_SelectHotelTest@2a5c8d3f]" started-at="2024-12-17T12:44:55 IST" name="details" finished-at="2024-12-17T12:44:55 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_004_SelectHotelTest@2a5c8d3f]" started-at="2024-12-17T12:44:55 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:44:59 IST" duration-ms="3910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_004_SelectHotelTest@2a5c8d3f]" started-at="2024-12-17T12:44:59 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:45:07 IST" duration-ms="8196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15/12/2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_004_SelectHotelTest@2a5c8d3f]" started-at="2024-12-17T12:45:07 IST" name="closeBrowser" finished-at="2024-12-17T12:45:07 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_004_SelectHotelTest -->
+      <class name="test.TC_001_RegisterTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:23 IST" name="details" finished-at="2024-12-17T12:42:23 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:23 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:42:27 IST" duration-ms="3867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:27 IST" name="registerTest" finished-at="2024-12-17T12:42:30 IST" duration-ms="3384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:30 IST" name="closeBrowser" finished-at="2024-12-17T12:42:30 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:30 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:42:33 IST" duration-ms="3003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="regTestInvalidTestData()[pri:1, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:33 IST" name="regTestInvalidTestData" finished-at="2024-12-17T12:42:37 IST" duration-ms="3286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regTestInvalidTestData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_001_RegisterTest@fbd1f6]" started-at="2024-12-17T12:42:37 IST" name="closeBrowser" finished-at="2024-12-17T12:42:37 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_001_RegisterTest -->
+      <class name="test.TC_009_FinalLogout">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_009_FinalLogout@2925bf5b]" started-at="2024-12-17T12:42:23 IST" name="data" finished-at="2024-12-17T12:42:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_009_FinalLogout@2925bf5b]" started-at="2024-12-17T12:48:43 IST" name="details" finished-at="2024-12-17T12:48:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_009_FinalLogout@2925bf5b]" started-at="2024-12-17T12:48:43 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:48:47 IST" duration-ms="4409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="endLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_009_FinalLogout@2925bf5b]" started-at="2024-12-17T12:48:47 IST" name="endLogoutTest" data-provider="excelRead" finished-at="2024-12-17T12:48:59 IST" duration-ms="11868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endLogoutTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_009_FinalLogout@2925bf5b]" started-at="2024-12-17T12:48:59 IST" name="closeBrowser" finished-at="2024-12-17T12:48:59 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_009_FinalLogout -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2024-12-17T12:48:59 IST" name="Edge Test" finished-at="2024-12-17T12:55:51 IST" duration-ms="411996">
+      <class name="test.TC_008_ChangePassword">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:54:57 IST" name="details" finished-at="2024-12-17T12:54:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:54:57 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:55:02 IST" duration-ms="4644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="changePasswordTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:55:02 IST" name="changePasswordTest" data-provider="excelRead" finished-at="2024-12-17T12:55:09 IST" duration-ms="6672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:55:09 IST" name="closeBrowser" finished-at="2024-12-17T12:55:09 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:55:09 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:55:13 IST" duration-ms="4695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="changePasswordTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:55:13 IST" name="changePasswordTest" data-provider="excelRead" finished-at="2024-12-17T12:55:35 IST" duration-ms="21543" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[L@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Your Password is successfully updated!!!')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4a16ee4af0e69385ca16aa1be89caa83, findElement {value=//span[contains(text(),'Your Password is successfully updated!!!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61431}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61431/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a16ee4af0e69385ca16aa1be89caa83]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Your Password is successfully updated!!!')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4a16ee4af0e69385ca16aa1be89caa83, findElement {value=//span[contains(text(),'Your Password is successfully updated!!!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61431}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61431/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a16ee4af0e69385ca16aa1be89caa83
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.ChangePassWord.clickSubmit(ChangePassWord.java:39)
+at test.TC_008_ChangePassword.changePasswordTest(TC_008_ChangePassword.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_008_ChangePassword@f79e]" started-at="2024-12-17T12:55:35 IST" name="closeBrowser" finished-at="2024-12-17T12:55:35 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_008_ChangePassword -->
+      <class name="test.TC_005_BookAHotelTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:52:08 IST" name="details" finished-at="2024-12-17T12:52:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:52:08 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:52:13 IST" duration-ms="4718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:52:13 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:52:31 IST" duration-ms="18347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15/12/2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2026]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:52:31 IST" name="closeBrowser" finished-at="2024-12-17T12:52:31 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:52:31 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:52:36 IST" duration-ms="5140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:52:36 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:53:04 IST" duration-ms="28085" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Melbourne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Sunshine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Logu]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Melbourne]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[987654321098765]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[VISA]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[February]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f357b420074090fe190388ff470db4bc, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61154}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61154/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f357b420074090fe190388ff470db4bc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f357b420074090fe190388ff470db4bc, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61154}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61154/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f357b420074090fe190388ff470db4bc
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.BookAHotel.clickBookNow(BookAHotel.java:76)
+at test.TC_005_BookAHotelTest.bookAHotelTest(TC_005_BookAHotelTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:53:05 IST" name="closeBrowser" finished-at="2024-12-17T12:53:05 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:53:05 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:53:09 IST" duration-ms="4694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:53:09 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:53:28 IST" duration-ms="18204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15/12/2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2026]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:53:28 IST" name="closeBrowser" finished-at="2024-12-17T12:53:28 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:53:28 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:53:33 IST" duration-ms="5088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookAHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:53:33 IST" name="bookAHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:54:01 IST" duration-ms="28001" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Melbourne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Sunshine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Logu]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Melbourne]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[23456]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[VISA]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[February]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9c021683731e7acf17749f6e964cb29a, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61249}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61249/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c021683731e7acf17749f6e964cb29a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Booking Confirmation ')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9c021683731e7acf17749f6e964cb29a, findElement {value=//td[contains(text(),'Booking Confirmation ')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61249}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61249/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c021683731e7acf17749f6e964cb29a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.BookAHotel.clickBookNow(BookAHotel.java:76)
+at test.TC_005_BookAHotelTest.bookAHotelTest(TC_005_BookAHotelTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_005_BookAHotelTest@5b94b04d]" started-at="2024-12-17T12:54:01 IST" name="closeBrowser" finished-at="2024-12-17T12:54:01 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_005_BookAHotelTest -->
+      <class name="test.TC_007_BookedItineraryTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_007_BookedItineraryTest@4c39bec8]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_007_BookedItineraryTest@4c39bec8]" started-at="2024-12-17T12:54:26 IST" name="details" finished-at="2024-12-17T12:54:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_007_BookedItineraryTest@4c39bec8]" started-at="2024-12-17T12:54:26 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:54:32 IST" duration-ms="5843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookedItineraryTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_007_BookedItineraryTest@4c39bec8]" started-at="2024-12-17T12:54:32 IST" name="bookedItineraryTest" data-provider="excelRead" finished-at="2024-12-17T12:54:57 IST" duration-ms="25312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[16/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookedItineraryTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_007_BookedItineraryTest@4c39bec8]" started-at="2024-12-17T12:54:57 IST" name="closeBrowser" finished-at="2024-12-17T12:54:57 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_007_BookedItineraryTest -->
+      <class name="test.TC_002_LoginTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:19 IST" name="details" finished-at="2024-12-17T12:49:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:20 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:49:25 IST" duration-ms="5579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:25 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:49:38 IST" duration-ms="12462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:38 IST" name="closeBrowser" finished-at="2024-12-17T12:49:38 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:38 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:49:43 IST" duration-ms="5624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:43 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:49:55 IST" duration-ms="11568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:55 IST" name="closeBrowser" finished-at="2024-12-17T12:49:55 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:49:55 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:50:01 IST" duration-ms="5551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:50:01 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:50:22 IST" duration-ms="21090" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayak]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Happ2024]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1ee97f9ab9244a56a0a3d97a88d99367, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60784}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60784/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ee97f9ab9244a56a0a3d97a88d99367]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1ee97f9ab9244a56a0a3d97a88d99367, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60784}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60784/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ee97f9ab9244a56a0a3d97a88d99367
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.LoginPage.clickLoginButton(LoginPage.java:31)
+at test.TC_002_LoginTest.loginTest(TC_002_LoginTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:50:22 IST" name="closeBrowser" finished-at="2024-12-17T12:50:22 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:50:22 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:50:28 IST" duration-ms="5581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:50:28 IST" name="loginTest" data-provider="excelRead" finished-at="2024-12-17T12:50:49 IST" duration-ms="21096" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganyaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Happ202]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8ae0f2f1fc1e7f00c523d13cddd283b3, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60825}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60825/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ae0f2f1fc1e7f00c523d13cddd283b3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,'Hello Loganayaki!')]"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8ae0f2f1fc1e7f00c523d13cddd283b3, findElement {value=//input[contains(@value,'Hello Loganayaki!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60825}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\Asus\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60825/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ae0f2f1fc1e7f00c523d13cddd283b3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.LoginPage.clickLoginButton(LoginPage.java:31)
+at test.TC_002_LoginTest.loginTest(TC_002_LoginTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002_LoginTest@399c4be1]" started-at="2024-12-17T12:50:49 IST" name="closeBrowser" finished-at="2024-12-17T12:50:49 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_002_LoginTest -->
+      <class name="test.TC_006_BookConfirmationTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_006_BookConfirmationTest@8c3b9d]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_006_BookConfirmationTest@8c3b9d]" started-at="2024-12-17T12:54:01 IST" name="details" finished-at="2024-12-17T12:54:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_006_BookConfirmationTest@8c3b9d]" started-at="2024-12-17T12:54:01 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:54:06 IST" duration-ms="5009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="bookingConfirmationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_006_BookConfirmationTest@8c3b9d]" started-at="2024-12-17T12:54:06 IST" name="bookingConfirmationTest" data-provider="excelRead" finished-at="2024-12-17T12:54:26 IST" duration-ms="19532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[16/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[LOGANAYAKI]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2/295,Sydney]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1234567890987650]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AMEX]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2030]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingConfirmationTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_006_BookConfirmationTest@8c3b9d]" started-at="2024-12-17T12:54:26 IST" name="closeBrowser" finished-at="2024-12-17T12:54:26 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_006_BookConfirmationTest -->
+      <class name="test.TC_003_SearchHotelTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:50:49 IST" name="details" finished-at="2024-12-17T12:50:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:50:49 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:50:55 IST" duration-ms="5707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:50:55 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:51:03 IST" duration-ms="7814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:03 IST" name="closeBrowser" finished-at="2024-12-17T12:51:03 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:03 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:51:08 IST" duration-ms="5192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:08 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:51:16 IST" duration-ms="7684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Melbourne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Sunshine]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:16 IST" name="closeBrowser" finished-at="2024-12-17T12:51:16 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:16 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:51:21 IST" duration-ms="5291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:21 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:51:30 IST" duration-ms="8647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Hervey]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Double]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:30 IST" name="closeBrowser" finished-at="2024-12-17T12:51:30 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:30 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:51:36 IST" duration-ms="5492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:36 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:51:43 IST" duration-ms="6995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Cornice]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Double]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:43 IST" name="closeBrowser" finished-at="2024-12-17T12:51:43 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:43 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:51:48 IST" duration-ms="4895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:48 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:51:55 IST" duration-ms="7366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Brisbane]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Hervey]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7 - Seven]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14-12-2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15-12-2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3 - Three]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_003_SearchHotelTest@291caca8]" started-at="2024-12-17T12:51:55 IST" name="closeBrowser" finished-at="2024-12-17T12:51:55 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_003_SearchHotelTest -->
+      <class name="test.TC_004_SelectHotelTest">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_004_SelectHotelTest@385e9564]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_004_SelectHotelTest@385e9564]" started-at="2024-12-17T12:51:55 IST" name="details" finished-at="2024-12-17T12:51:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_004_SelectHotelTest@385e9564]" started-at="2024-12-17T12:51:55 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:52:00 IST" duration-ms="4851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="searchHotelTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_004_SelectHotelTest@385e9564]" started-at="2024-12-17T12:52:00 IST" name="searchHotelTest" data-provider="excelRead" finished-at="2024-12-17T12:52:08 IST" duration-ms="7423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[14/12/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[15/12/2024]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2 - Two]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_004_SelectHotelTest@385e9564]" started-at="2024-12-17T12:52:08 IST" name="closeBrowser" finished-at="2024-12-17T12:52:08 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_004_SelectHotelTest -->
+      <class name="test.TC_001_RegisterTest">
+        <test-method is-config="true" signature="reportInitilization()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:42:23 IST" name="reportInitilization" finished-at="2024-12-17T12:42:23 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportInitilization -->
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:48:59 IST" name="details" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:48:59 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:49:05 IST" duration-ms="5850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="registerTest()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:49:05 IST" name="registerTest" finished-at="2024-12-17T12:49:09 IST" duration-ms="3971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:49:09 IST" name="closeBrowser" finished-at="2024-12-17T12:49:09 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:49:09 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:49:15 IST" duration-ms="5781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="regTestInvalidTestData()[pri:1, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:49:15 IST" name="regTestInvalidTestData" finished-at="2024-12-17T12:49:19 IST" duration-ms="4089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regTestInvalidTestData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:49:19 IST" name="closeBrowser" finished-at="2024-12-17T12:49:19 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="reportClose()[pri:0, instance:test.TC_001_RegisterTest@45b4c3a9]" started-at="2024-12-17T12:55:51 IST" name="reportClose" finished-at="2024-12-17T12:55:52 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportClose -->
+      </class> <!-- test.TC_001_RegisterTest -->
+      <class name="test.TC_009_FinalLogout">
+        <test-method is-config="true" signature="data()[pri:0, instance:test.TC_009_FinalLogout@7ee8290b]" started-at="2024-12-17T12:48:59 IST" name="data" finished-at="2024-12-17T12:48:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="details()[pri:0, instance:test.TC_009_FinalLogout@7ee8290b]" started-at="2024-12-17T12:55:35 IST" name="details" finished-at="2024-12-17T12:55:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- details -->
+        <test-method is-config="true" signature="LaunchAndLoadURL(java.lang.String)[pri:0, instance:test.TC_009_FinalLogout@7ee8290b]" started-at="2024-12-17T12:55:35 IST" name="LaunchAndLoadURL" finished-at="2024-12-17T12:55:40 IST" duration-ms="4764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAndLoadURL -->
+        <test-method signature="endLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC_009_FinalLogout@7ee8290b]" started-at="2024-12-17T12:55:40 IST" name="endLogoutTest" data-provider="excelRead" finished-at="2024-12-17T12:55:51 IST" duration-ms="11023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Loganayaki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Logi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endLogoutTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_009_FinalLogout@7ee8290b]" started-at="2024-12-17T12:55:51 IST" name="closeBrowser" finished-at="2024-12-17T12:55:51 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TC_009_FinalLogout -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- Suite -->
+</testng-results>

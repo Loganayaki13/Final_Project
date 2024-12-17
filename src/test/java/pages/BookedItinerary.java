@@ -38,8 +38,9 @@ public class BookedItinerary extends ProjectSpecificationMethods {
 	}
 
 	// validation for confirming the alert
-	public ChangePassWord confirmCancel() {
+	public ChangePassWord confirmCancel() throws InterruptedException {
 		expectedResult = "Selected booking Are cancelled.";
+		Thread.sleep(5000);
 		WebElement actualResult = driver
 				.findElement(By.xpath("//label[contains(text(),'Selected booking Are cancelled.')]"));
 		Assert.assertEquals(expectedResult, actualResult.getText());
